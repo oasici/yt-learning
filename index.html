@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Interactive Learning Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search videos...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Explore Educational Content</h2>
+                <p>Discover and learn from a curated collection of educational videos organized by topic</p>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="container">
+                <h2>Featured Videos</h2>
+                <div class="featured-videos" id="featured-videos">
+                    <!-- Featured videos will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <div class="category-grid" id="category-grid">
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="video-container"></div>
+            <div id="video-info">
+                <h3 id="video-title"></h3>
+                <p id="video-channel"></p>
+                <div id="video-description"></div>
+            </div>
+            <div id="related-videos">
+                <h4>Related Videos</h4>
+                <div id="related-videos-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="about" id="about">
+                    <h3>About This Project</h3>
+                    <p>This interactive learning platform organizes educational YouTube videos by topic, making it easier to explore and learn from curated content.</p>
+                </div>
+                <div class="credits">
+                    <h3>Credits</h3>
+                    <p>Videos sourced from various educational YouTube channels.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Interactive Learning Hub</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
